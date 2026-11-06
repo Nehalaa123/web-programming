@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STUDENT REGISTRATION FORM</title>
+</head>
+<body>
+<h2>STUDENT REGISTRATION FORM</h2>
+<form method="POST"onsubmit="return validateForm();">
+<label>Name:</label>
+<input type="text" name="name" id="name">
+<br><br>
+<label>Email:</label>
+<input type="email" name="email" id="email">
+<br><br>
+<label>Password:</label>
+<input type="password" name="password" id="password">
+<br><br>
+<label>Age:</label>
+<input type="number" name="age" id="age">
+<br><br>
+<label>Gender:</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<br><br>
+<label>Hobbies:</label>
+<input type="checkbox" name="hobby" value="music">Music
+<input type="checkbox" name="hobby" value="travelling">Travelling
+<input type="checkbox" name="hobby" value="reading">Reading
+<br><br>
+<label>Course:</label>
+<select name="course" id="course">
+<option>MCA</option>
+<option>MBA</option>
+<option>BCA</option>
+<option>M.Tech</option>
+</select>
+<br><br>
+<label>Address:</label><br>
+<textarea name="address" rows="4" cols="30"></textarea>
+<br><br>
+<label>Date of Birth:</label>
+<input type="date" name="dob" id="dob">
+<br><br>
+<input type="Submit" value="Register">
+<input type="Reset" value="Clear">
+</form>
+<script>
+function validateForm()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+var age=document.getElementById("age").value;
+var gender=document.getElementByName("gender").value;
+var hobbies=document.getElementByName("hobby").value;
+var course=document.getElementById("course").value;
+var address=document.getElementByname("address").value;
+var date of birth=document.getElementById("dob").value;
+var msg="";
+var selected=false;
+if(name=="")
+{
+msg+="Enter Name\n";
+}
+if(email=="")
+{
+msg+="Enter Email\n";
+}
+if(password=="")
+{
+msg+=Enter Password\n"
+}
+if(age=="")
+{
+msg+="Enter your age\n";
+}
+if(gender=="")
+{
+msg+="Select your gender\n";
+}
+if(couse=="")
+{
+msg+="Select your course\n";
+}
+if(address=="")
+{
+msg+="Enter your address\n";
+}
+if(date of birth=="")
+{
+msg+="Enter dob\n";
+}
+for(var i=0;i<hobby.length;i++)
+{
+if (hobby[i].checked)
+{
+select=True;
+}
+
+</script>
+</body>
+</html
