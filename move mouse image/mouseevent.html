@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>mouse over event</title>
+</head>
+<body>
+<center>
+<h2>Move the mouse over the image</h2>
+<div onmouseover="newContent()" onmouseout="changeContent()">
+<img id="myimage" src="C:/Users/MCA18/Downloads/catimage.jpg" width="200" height="150">
+<h4 id="My Text">This is the original image</h4>
+</div>
+<script>
+function newContent()
+{
+document.getElementById("myimage").src="C:/Users/MCA18/Downloads/beautiful-domestic-cat-laying-fence.jpg";
+document.getElementById("My Text").innerHTML="This is the New image";
+}
+function changeContent()
+{
+document.getElementById("myimage").src="C:/Users/MCA18/Downloads/catimage.jpg";
+document.getElementById("My Text").innerHTML="This is the original image";
+}
+</script>
+</center>
+</body>
+</html>
